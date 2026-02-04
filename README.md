@@ -1,6 +1,6 @@
 # greet_anyone
 
-A library and cli to greet anyone.
+An example library and cli to greet anyone.
 
 ## Usage
 
