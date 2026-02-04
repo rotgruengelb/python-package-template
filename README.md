@@ -1,31 +1,28 @@
-# cutstitch
+# greet_anyone
 
-A tool to stitch images together using various cutout modes.
+A library and cli to greet anyone.
 
 ## Usage
 
 ### CLI
 
 ```
-usage: cutstitch [-h] [--mode {vertical,horizontal,diagonal,circle}] [--angle ANGLE] [--output OUTPUT] files [files ...]
+usage: cli.py [-h] [--exited EXITED] who
+
+Greet anyone.
 
 positional arguments:
-  files                 Image files to stitch together (two or more, in order)
+  who              who to greet
 
 options:
-  -h, --help            show this help message and exit
-  --mode {vertical,horizontal,diagonal,circle}
-                        Cutout mode (default: vertical)
-  --angle ANGLE         Angle for diagonal mode
-  --output OUTPUT       Output file name
+  -h, --help       show this help message and exit
+  --exited EXITED  adds a exclamation point at the end
 ```
 
 #### Examples
 ```sh
-greet_anyone image1.png image2.png --mode vertical --output result.png
+greet_anyone Traveler --exited true
 ```
 
 ## Features
-- Stitch multiple images together
-- Multiple  cutout modes
-- Simple CLI
+- Greet anyone
